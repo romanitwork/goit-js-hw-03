@@ -6,15 +6,64 @@ const products = [
   { name: "Захват", price: 1200, quantity: 2 }
 ];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function getAllPropValues(arr, prop) {
   const target = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (Object.keys(products[i]).includes(prop)) {
-      target.push(arr[i][prop]);
-    }
-  }
-  return target;
+ for(let obj of arr){
+  //  console.log('obj :', obj);
+   const values = Object.keys(obj);
+  //  console.log('values :', values);
+  //  console.log('prop :', prop);
+   if(values.includes(prop)){
+     target.push(obj[prop]);
+   }
+   
+ }
+ return target;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
