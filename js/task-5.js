@@ -7,62 +7,16 @@ const products = [
 ];
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function getAllPropValues(arr, prop) {
   const target = [];
  for(let obj of arr){
-  //  console.log('obj :', obj);
    const values = Object.keys(obj);
-  //  console.log('values :', values);
-  //  console.log('prop :', prop);
    if(values.includes(prop)){
      target.push(obj[prop]);
    }
    
  }
  return target;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
